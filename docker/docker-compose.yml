@@ -30,5 +30,6 @@ services:
         ports:
             - '${PORT}:${PORT}'
         volumes:
+            - /Users/codingbutter/insurance_agent_reference/:/agent_data
             - ~/.flowise:/root/.flowise
         command: /bin/sh -c "sleep 3; flowise start"
